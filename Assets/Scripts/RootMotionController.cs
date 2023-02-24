@@ -127,8 +127,9 @@ public class RootMotionController : MonoBehaviour
             }
             else
             {
-                DOTween.To(() => footIKScript.GlobalWeight, x => footIKScript.GlobalWeight = x, 1, 0.2f);
                 DOTween.To(() => targetSpeed, x => targetSpeed = x, walkSpeed, smoothTime);
+                DOTween.To(() => footIKScript.GlobalWeight, x => footIKScript.GlobalWeight = x, 1, 0.2f);
+
 
             }
 

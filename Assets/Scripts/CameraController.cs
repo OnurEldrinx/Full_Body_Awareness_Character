@@ -69,7 +69,7 @@ public class CameraController : MonoBehaviour
         if(inputManager.move == Vector2.zero)
         {
             CinemachineTargetYaw += Mouse_X * RotationSpeed * deltaTimeMultiplier;
-            CinemachineTargetYaw = ClampAngle(CinemachineTargetYaw, -110, 110);
+            CinemachineTargetYaw = ClampAngle(CinemachineTargetYaw, BottomClamp - 20, TopClamp + 20);
         }
         else
         {
