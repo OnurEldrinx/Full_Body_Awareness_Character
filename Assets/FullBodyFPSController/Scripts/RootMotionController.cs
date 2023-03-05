@@ -162,7 +162,7 @@ public class RootMotionController : MonoBehaviour
     {
         rootMotion += animator.deltaPosition;
         rootMotion.y = verticalVelocity * Time.deltaTime;
-        Debug.Log(rootMotion);
+        //Debug.Log(rootMotion);
     }
 
     private void JumpTimeouts()
